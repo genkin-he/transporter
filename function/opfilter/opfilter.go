@@ -3,9 +3,9 @@ package opfilter
 import (
 	"strings"
 
-	"github.com/compose/transporter/function"
-	"github.com/compose/transporter/message"
-	"github.com/compose/transporter/message/ops"
+	"transporter/function"
+	"transporter/message"
+	"transporter/message/ops"
 )
 
 var (

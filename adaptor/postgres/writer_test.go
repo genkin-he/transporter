@@ -6,10 +6,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/compose/transporter/adaptor"
-	"github.com/compose/transporter/message"
-	"github.com/compose/transporter/message/data"
-	"github.com/compose/transporter/message/ops"
+	"transporter/adaptor"
+	"transporter/message"
+	"transporter/message/data"
+	"transporter/message/ops"
 )
 
 var optests = []struct {

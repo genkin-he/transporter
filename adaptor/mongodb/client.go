@@ -11,8 +11,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/compose/transporter/client"
-	"github.com/compose/transporter/log"
+	"transporter/client"
+	"transporter/log"
 	"gopkg.in/mgo.v2"
 	"gopkg.in/mgo.v2/bson"
 )

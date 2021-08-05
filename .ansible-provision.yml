@@ -29,7 +29,7 @@
       elasticsearch_index_number_of_replicas: 1
 
     - role: gotansible.gobuild
-      gobuild_project_path: github.com/compose/transporter
+      gobuild_project_path: transporter
       gobuild_repo_version: master
       gobuild_dir: /home/vagrant/go
       gobuild_commands:

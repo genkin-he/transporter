@@ -11,10 +11,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/compose/transporter/events"
-	"github.com/compose/transporter/log"
-	"github.com/compose/transporter/message"
-	"github.com/compose/transporter/offset"
+	"transporter/events"
+	"transporter/log"
+	"transporter/message"
+	"transporter/offset"
 )
 
 var (

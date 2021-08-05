@@ -15,7 +15,7 @@ type Token int
 // name (e.g. for the token IDENTIFIER, the string is "IDENTIFIER").
 //
 func (tkn Token) String() string {
-	if 0 == tkn {
+	if tkn == 0 {
 		return "UNKNOWN"
 	}
 	if tkn < Token(len(token2string)) {
@@ -40,7 +40,7 @@ func (tkn Token) precedence(in bool) int {
 	case EXCLUSIVE_OR:
 		return 4
 
-	case AND, AND_ASSIGN, AND_NOT, AND_NOT_ASSIGN:
+	case AND, AND_ASSIGN:
 		return 5
 
 	case EQUAL,

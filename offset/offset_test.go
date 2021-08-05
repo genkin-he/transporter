@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/compose/transporter/offset"
+	"transporter/offset"
 )
 
 var (

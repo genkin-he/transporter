@@ -1,7 +1,7 @@
 # opfilter function
 
 `opfilter()` will skip messages based on the provided Whitelist or Blacklist ops. The string representation
-of each operation can be found in the [message/ops pkg](https://github.com/compose/transporter/blob/master/message/ops/ops.go#L22-L41).
+of each operation can be found in the [message/ops pkg](https://transporter/blob/master/message/ops/ops.go#L22-L41).
 
 ### configuration
 

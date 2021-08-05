@@ -9,8 +9,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/compose/transporter/commitlog"
-	"github.com/compose/transporter/log"
+	"transporter/commitlog"
+	"transporter/log"
 )
 
 func runXlog(args []string) error {
@@ -58,13 +58,13 @@ func runXlog(args []string) error {
 		if err != nil {
 			return err
 		}
-		fmt.Fprintf(os.Stdout, "%-10s: %d\n", "offset", offset)
+		_, _ = fmt.Fprintf(os.Stdout, "%-10s: %d\n", "offset", offset)
 		ts := time.Unix(int64(e.Timestamp), 0)
-		fmt.Fprintf(os.Stdout, "%-10s: %s\n", "timestamp", ts)
-		fmt.Fprintf(os.Stdout, "%-10s: %s\n", "mode", e.Mode.String())
-		fmt.Fprintf(os.Stdout, "%-10s: %s\n", "op", strings.ToUpper(e.Op.String()))
-		fmt.Fprintf(os.Stdout, "%-10s: %s\n", "key", string(e.Key))
-		fmt.Fprintf(os.Stdout, "%-10s: %s\n", "value", string(e.Value))
+		_, _ = fmt.Fprintf(os.Stdout, "%-10s: %s\n", "timestamp", ts)
+		_, _ = fmt.Fprintf(os.Stdout, "%-10s: %s\n", "mode", e.Mode.String())
+		_, _ = fmt.Fprintf(os.Stdout, "%-10s: %s\n", "op", strings.ToUpper(e.Op.String()))
+		_, _ = fmt.Fprintf(os.Stdout, "%-10s: %s\n", "key", string(e.Key))
+		_, _ = fmt.Fprintf(os.Stdout, "%-10s: %s\n", "value", string(e.Value))
 	}
 
 	return nil

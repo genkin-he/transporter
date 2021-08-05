@@ -12,9 +12,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/compose/transporter/adaptor"
-	"github.com/compose/transporter/commitlog"
-	"github.com/compose/transporter/offset"
+	"transporter/adaptor"
+	"transporter/commitlog"
+	"transporter/offset"
 )
 
 var (

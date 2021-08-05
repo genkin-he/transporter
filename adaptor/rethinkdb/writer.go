@@ -6,10 +6,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/compose/transporter/client"
-	"github.com/compose/transporter/log"
-	"github.com/compose/transporter/message"
-	"github.com/compose/transporter/message/ops"
+	"transporter/client"
+	"transporter/log"
+	"transporter/message"
+	"transporter/message/ops"
 
 	r "gopkg.in/gorethink/gorethink.v3"
 )

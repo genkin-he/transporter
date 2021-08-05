@@ -27,5 +27,5 @@ for pair in linux/amd64 darwin/amd64 dragonfly/amd64 freebsd/amd64 netbsd/amd64 
 	set GOARCH (echo $pair | cut -d'/' -f2)
 	set BIN    $DISTDIR/transporter-$VERSION-$GOOS-$GOARCH
 	echo $BIN
-	env GOOS=$GOOS GOARCH=$GOARCH go build -o $BIN -ldflags="-X main.version=$VERSION" github.com/compose/transporter/cmd/transporter
+	env GOOS=$GOOS GOARCH=$GOARCH go build -o $BIN -ldflags="-X main.version=$VERSION" transporter/cmd/transporter
 end

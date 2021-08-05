@@ -1,19 +1,18 @@
 package v2
 
 import (
-	"context"
 	"fmt"
 	"sync"
 	"time"
 
 	elastic "gopkg.in/olivere/elastic.v3"
 
-	"github.com/compose/transporter/adaptor/elasticsearch/clients"
-	"github.com/compose/transporter/client"
-	"github.com/compose/transporter/log"
-	"github.com/compose/transporter/message"
-	"github.com/compose/transporter/message/ops"
 	version "github.com/hashicorp/go-version"
+	"transporter/adaptor/elasticsearch/clients"
+	"transporter/client"
+	"transporter/log"
+	"transporter/message"
+	"transporter/message/ops"
 )
 
 var (
@@ -62,7 +61,7 @@ func init() {
 			FlushInterval(5 * time.Second). // commit every 5s
 			Before(w.preBulkProcessor).
 			After(w.postBulkProcessor).
-			Do(context.TODO())
+			Do()
 		if err != nil {
 			return nil, err
 		}

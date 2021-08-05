@@ -3,19 +3,19 @@ package rabbitmq
 import (
 	"sync"
 
-	"github.com/compose/transporter/adaptor"
-	"github.com/compose/transporter/client"
+	"transporter/adaptor"
+	"transporter/client"
 )
 
 const (
 	sampleConfig = `{
-  "uri": "${RABBITMQ_URI}",
-  "routing_key": "",
-  "key_in_field": false
-  // "delivery_mode": 1, // non-persistent (1) or persistent (2)
-  // "api_port": 15672,
-  // "ssl": false,
-  // "cacerts": ["/path/to/cert.pem"]
+  uri: "${RABBITMQ_URI}",
+  routing_key: "",
+  key_in_field: false
+  // delivery_mode: 1, // non-persistent (1) or persistent (2)
+  // api_port: 15672,
+  // ssl: false,
+  // cacerts: ["/path/to/cert.pem"]
 }`
 
 	description = "an adaptor that handles publish/subscribe messaging with RabbitMQ"

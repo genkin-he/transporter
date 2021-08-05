@@ -9,9 +9,9 @@ import (
 
 	"gopkg.in/mgo.v2/bson"
 
-	"github.com/compose/transporter/adaptor"
-	"github.com/compose/transporter/message"
-	"github.com/compose/transporter/message/ops"
+	"transporter/adaptor"
+	"transporter/message"
+	"transporter/message/ops"
 )
 
 var (

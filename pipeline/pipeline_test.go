@@ -6,12 +6,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/compose/transporter/adaptor"
-	_ "github.com/compose/transporter/adaptor/file"
-	"github.com/compose/transporter/client"
-	"github.com/compose/transporter/commitlog"
-	"github.com/compose/transporter/events"
-	"github.com/compose/transporter/offset"
+	"transporter/adaptor"
+	_ "transporter/adaptor/file"
+	"transporter/client"
+	"transporter/commitlog"
+	"transporter/events"
+	"transporter/offset"
 )
 
 // a noop node adaptor to help test

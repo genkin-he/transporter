@@ -2,10 +2,10 @@ package all
 
 import (
 	// Initialize all adapters by importing this package
-	_ "github.com/compose/transporter/adaptor/elasticsearch"
-	_ "github.com/compose/transporter/adaptor/file"
-	_ "github.com/compose/transporter/adaptor/mongodb"
-	_ "github.com/compose/transporter/adaptor/postgres"
-	_ "github.com/compose/transporter/adaptor/rabbitmq"
-	_ "github.com/compose/transporter/adaptor/rethinkdb"
+	_ "transporter/adaptor/elasticsearch"
+	_ "transporter/adaptor/file"
+	_ "transporter/adaptor/mongodb"
+	_ "transporter/adaptor/postgres"
+	_ "transporter/adaptor/rabbitmq"
+	_ "transporter/adaptor/rethinkdb"
 )

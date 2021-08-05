@@ -39,7 +39,7 @@ cd compose
 We now can download the transporter source into this directory
 
 ```
-git clone https://github.com/compose/transporter
+git clone https://transporter
 ```
 
 5) Build the transporter

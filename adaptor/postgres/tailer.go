@@ -9,12 +9,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/compose/transporter/client"
-	"github.com/compose/transporter/commitlog"
-	"github.com/compose/transporter/log"
-	"github.com/compose/transporter/message"
-	"github.com/compose/transporter/message/data"
-	"github.com/compose/transporter/message/ops"
+	"transporter/client"
+	"transporter/commitlog"
+	"transporter/log"
+	"transporter/message"
+	"transporter/message/data"
+	"transporter/message/ops"
 )
 
 var (
@@ -260,7 +260,7 @@ func casifyValue(value string, valueType string) interface{} {
 
 		r := csv.NewReader(strings.NewReader(value[1 : len(value)-1]))
 		arrayValues, err := r.ReadAll()
-		if err != nil {
+		if err != nil || arrayValues == nil || len(arrayValues) == 0  {
 			return value
 		}
 

@@ -7,9 +7,9 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/compose/transporter/adaptor"
-	"github.com/compose/transporter/message"
-	"github.com/compose/transporter/message/ops"
+	"transporter/adaptor"
+	"transporter/message"
+	"transporter/message/ops"
 )
 
 func TestWrite(t *testing.T) {

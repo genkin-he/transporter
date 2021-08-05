@@ -1,8 +1,8 @@
 FROM golang:1.9 as builder
 
 # Setting up working directory
-ADD . /go/src/github.com/compose/transporter/
-WORKDIR /go/src/github.com/compose/transporter/
+ADD . /go/src/transporter/
+WORKDIR /go/src/transporter/
 
 ARG VERSION
 
@@ -12,7 +12,7 @@ FROM alpine:latest
 
 RUN apk --no-cache add ca-certificates
 
-COPY --from=builder /go/src/github.com/compose/transporter/transporter /usr/local/bin/
+COPY --from=builder /go/src/transporter/transporter /usr/local/bin/
 
 # Alpine Linux doesn't use pam, which means that there is no /etc/nsswitch.conf,
 # but Golang relies on /etc/nsswitch.conf to check the order of DNS resolving

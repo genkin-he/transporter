@@ -9,11 +9,11 @@ import (
 	mgo "gopkg.in/mgo.v2"
 	"gopkg.in/mgo.v2/bson"
 
-	"github.com/compose/transporter/adaptor"
-	"github.com/compose/transporter/log"
-	"github.com/compose/transporter/message"
-	"github.com/compose/transporter/message/data"
-	"github.com/compose/transporter/message/ops"
+	"transporter/adaptor"
+	"transporter/log"
+	"transporter/message"
+	"transporter/message/data"
+	"transporter/message/ops"
 )
 
 var optests = []struct {

@@ -5,24 +5,24 @@ import (
 	"errors"
 	"sync"
 
-	"github.com/compose/transporter/adaptor"
-	"github.com/compose/transporter/client"
+	"transporter/adaptor"
+	"transporter/client"
 )
 
 const (
 	description = "a mongodb adaptor that functions as both a source and a sink"
 
 	sampleConfig = `{
-  "uri": "${MONGODB_URI}"
-  // "timeout": "30s",
-  // "tail": false,
-  // "ssl": false,
-  // "cacerts": ["/path/to/cert.pem"],
-  // "wc": 1,
-  // "fsync": false,
-  // "bulk": false,
-  // "collection_filters": "{}",
-  // "read_preference": "Primary"
+  uri: "${MONGODB_URI}"
+  // timeout: "30s",
+  // tail: false,
+  // ssl: false,
+  // cacerts: ["/path/to/cert.pem"],
+  // wc: 1,
+  // fsync: false,
+  // bulk: false,
+  // collection_filters: "{}",
+  // read_preference: "Primary"
 }`
 )
 

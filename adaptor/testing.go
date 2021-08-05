@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/compose/transporter/client"
+	"transporter/client"
 )
 
 var (

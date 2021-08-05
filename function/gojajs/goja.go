@@ -6,12 +6,12 @@ import (
 	"time"
 
 	"github.com/compose/mejson"
-	"github.com/compose/transporter/function"
-	"github.com/compose/transporter/log"
-	"github.com/compose/transporter/message"
-	"github.com/compose/transporter/message/data"
-	"github.com/compose/transporter/message/ops"
 	gojaVM "github.com/dop251/goja"
+	"transporter/function"
+	"transporter/log"
+	"transporter/message"
+	"transporter/message/data"
+	"transporter/message/ops"
 )
 
 var (

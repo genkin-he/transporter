@@ -3,3 +3,6 @@
 /pipeline.js
 /transformer.js
 .vscode
+/vendor/*
+.idea/*
+/transform.js

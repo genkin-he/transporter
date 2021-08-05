@@ -3,7 +3,7 @@ package file
 import (
 	"testing"
 
-	"github.com/compose/transporter/adaptor"
+	"transporter/adaptor"
 )
 
 func TestDescription(t *testing.T) {

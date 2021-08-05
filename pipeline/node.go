@@ -18,15 +18,15 @@ import (
 	"time"
 
 	"github.com/compose/mejson"
-	"github.com/compose/transporter/adaptor"
-	"github.com/compose/transporter/client"
-	"github.com/compose/transporter/commitlog"
-	"github.com/compose/transporter/function"
-	"github.com/compose/transporter/log"
-	"github.com/compose/transporter/message"
-	"github.com/compose/transporter/message/ops"
-	"github.com/compose/transporter/offset"
-	"github.com/compose/transporter/pipe"
+	"transporter/adaptor"
+	"transporter/client"
+	"transporter/commitlog"
+	"transporter/function"
+	"transporter/log"
+	"transporter/message"
+	"transporter/message/ops"
+	"transporter/offset"
+	"transporter/pipe"
 )
 
 const (

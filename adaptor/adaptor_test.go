@@ -4,10 +4,10 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/compose/transporter/adaptor"
-	_ "github.com/compose/transporter/log"
-	"github.com/compose/transporter/message"
-	"github.com/compose/transporter/message/ops"
+	"transporter/adaptor"
+	_ "transporter/log"
+	"transporter/message"
+	"transporter/message/ops"
 )
 
 func init() {

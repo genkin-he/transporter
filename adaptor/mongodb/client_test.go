@@ -10,7 +10,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/compose/transporter/client"
+	"transporter/client"
 
 	mgo "gopkg.in/mgo.v2"
 )

@@ -7,12 +7,12 @@ import (
 	"time"
 
 	"github.com/compose/mejson"
-	"github.com/compose/transporter/function"
-	"github.com/compose/transporter/log"
-	"github.com/compose/transporter/message"
-	"github.com/compose/transporter/message/data"
-	"github.com/compose/transporter/message/ops"
 	ottoVM "github.com/robertkrimen/otto"
+	"transporter/function"
+	"transporter/log"
+	"transporter/message"
+	"transporter/message/data"
+	"transporter/message/ops"
 
 	_ "github.com/robertkrimen/otto/underscore" // enable underscore
 )

@@ -5,9 +5,9 @@ import (
 	"io"
 
 	"github.com/compose/mejson"
-	"github.com/compose/transporter/client"
-	"github.com/compose/transporter/commitlog"
-	"github.com/compose/transporter/message"
+	"transporter/client"
+	"transporter/commitlog"
+	"transporter/message"
 )
 
 type resumeData struct {

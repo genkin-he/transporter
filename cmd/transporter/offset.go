@@ -11,8 +11,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/compose/transporter/log"
-	"github.com/compose/transporter/offset"
+	"transporter/log"
+	"transporter/offset"
 	"github.com/olekukonko/tablewriter"
 )
 
@@ -129,12 +129,12 @@ func runOffset(args []string) error {
 		if err := os.Rename(replaceDir, offsetDir); err != nil {
 			return err
 		}
-		fmt.Fprintf(os.Stdout, "OK")
+		_, _ = fmt.Fprintf(os.Stdout, "OK")
 	case "delete":
 		offsetDir := filepath.Join(*logDir, fmt.Sprintf("%s%s", consumerDirPrefix, args[1]))
 		err := os.RemoveAll(offsetDir)
 		if err == nil {
-			fmt.Fprintf(os.Stdout, "OK")
+			_, _ = fmt.Fprintf(os.Stdout, "OK")
 		}
 		return err
 	}

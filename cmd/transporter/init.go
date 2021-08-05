@@ -5,7 +5,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/compose/transporter/adaptor"
+	"transporter/adaptor"
 )
 
 func runInit(args []string) error {
@@ -38,13 +38,13 @@ func runInit(args []string) error {
 	for _, name := range args {
 		a, _ := adaptor.GetAdaptor(name, map[string]interface{}{})
 		if d, ok := a.(adaptor.Describable); ok {
-			appFileHandle.WriteString(fmt.Sprintf("var %s = %s(%s)\n\n", nodeName, name, d.SampleConfig()))
+			_, _ = appFileHandle.WriteString(fmt.Sprintf("var %s = %s(%s)\n\n", nodeName, name, d.SampleConfig()))
 			nodeName = "sink"
 		} else {
 			return fmt.Errorf("adaptor '%s' did not provide a sample config", name)
 		}
 	}
-	appFileHandle.WriteString(`t.Source("source", source, "/.*/").Save("sink", sink, "/.*/")`)
-	appFileHandle.WriteString("\n")
+	_, _ = appFileHandle.WriteString(`t.Source("source", source, "/.*/").Save("sink", sink, "/.*/")`)
+	_, _ = appFileHandle.WriteString("\n")
 	return nil
 }

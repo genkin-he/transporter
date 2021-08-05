@@ -7,7 +7,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/compose/transporter/log"
+	"transporter/log"
 )
 
 // Compactor defines the necessary functions for performing compaction of

@@ -8,7 +8,7 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/compose/transporter/log"
+	"transporter/log"
 )
 
 var (

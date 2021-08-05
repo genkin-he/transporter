@@ -7,12 +7,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/compose/transporter/client"
-	"github.com/compose/transporter/commitlog"
-	"github.com/compose/transporter/log"
-	"github.com/compose/transporter/message"
-	"github.com/compose/transporter/message/data"
-	"github.com/compose/transporter/message/ops"
+	"transporter/client"
+	"transporter/commitlog"
+	"transporter/log"
+	"transporter/message"
+	"transporter/message/data"
+	"transporter/message/ops"
 	mgo "gopkg.in/mgo.v2"
 	"gopkg.in/mgo.v2/bson"
 )

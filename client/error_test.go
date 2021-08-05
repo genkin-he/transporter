@@ -3,7 +3,7 @@ package client_test
 import (
 	"testing"
 
-	"github.com/compose/transporter/client"
+	"transporter/client"
 )
 
 var errorTests = []struct {

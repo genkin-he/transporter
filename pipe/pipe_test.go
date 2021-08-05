@@ -7,9 +7,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/compose/transporter/message"
-	"github.com/compose/transporter/message/ops"
-	"github.com/compose/transporter/offset"
+	"transporter/message"
+	"transporter/message/ops"
+	"transporter/offset"
 )
 
 func TestSend(t *testing.T) {

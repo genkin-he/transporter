@@ -7,7 +7,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/compose/transporter/client"
+	"transporter/client"
 
 	"github.com/streadway/amqp"
 )

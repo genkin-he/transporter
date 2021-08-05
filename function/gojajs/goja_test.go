@@ -4,10 +4,10 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/compose/transporter/function"
-	"github.com/compose/transporter/message"
-	"github.com/compose/transporter/message/data"
-	"github.com/compose/transporter/message/ops"
+	"transporter/function"
+	"transporter/message"
+	"transporter/message/data"
+	"transporter/message/ops"
 	"gopkg.in/mgo.v2/bson"
 )
 

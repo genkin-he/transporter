@@ -8,11 +8,11 @@ import (
 	"net/url"
 	"sync"
 
-	"github.com/compose/transporter/client"
-	"github.com/compose/transporter/commitlog"
-	"github.com/compose/transporter/log"
-	"github.com/compose/transporter/message"
-	"github.com/compose/transporter/message/ops"
+	"transporter/client"
+	"transporter/commitlog"
+	"transporter/log"
+	"transporter/message"
+	"transporter/message/ops"
 	"github.com/streadway/amqp"
 )
 

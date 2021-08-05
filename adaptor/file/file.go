@@ -3,13 +3,13 @@ package file
 import (
 	"sync"
 
-	"github.com/compose/transporter/adaptor"
-	"github.com/compose/transporter/client"
+	"transporter/adaptor"
+	"transporter/client"
 )
 
 const (
 	sampleConfig = `{
-  "uri": "stdout://"
+  uri: "stdout://"
 }`
 
 	description = "an adaptor that reads / writes files"

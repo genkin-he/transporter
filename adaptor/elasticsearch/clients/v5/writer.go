@@ -8,11 +8,11 @@ import (
 
 	elastic "gopkg.in/olivere/elastic.v5"
 
-	"github.com/compose/transporter/adaptor/elasticsearch/clients"
-	"github.com/compose/transporter/client"
-	"github.com/compose/transporter/log"
-	"github.com/compose/transporter/message"
-	"github.com/compose/transporter/message/ops"
+	"transporter/adaptor/elasticsearch/clients"
+	"transporter/client"
+	"transporter/log"
+	"transporter/message"
+	"transporter/message/ops"
 	version "github.com/hashicorp/go-version"
 )
 
@@ -34,7 +34,7 @@ type Writer struct {
 }
 
 func init() {
-	constraint, _ := version.NewConstraint(">= 5.0")
+	constraint, _ := version.NewConstraint(">= 5.0, < 7.0")
 	clients.Add("v5", constraint, func(opts *clients.ClientOptions) (client.Writer, error) {
 		esOptions := []elastic.ClientOptionFunc{
 			elastic.SetURL(opts.URLs...),

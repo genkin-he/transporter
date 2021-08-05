@@ -4,7 +4,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/compose/transporter/log"
+	"transporter/log"
 
 	r "gopkg.in/gorethink/gorethink.v3"
 )

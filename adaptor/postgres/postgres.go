@@ -3,8 +3,8 @@ package postgres
 import (
 	"sync"
 
-	"github.com/compose/transporter/adaptor"
-	"github.com/compose/transporter/client"
+	"transporter/adaptor"
+	"transporter/client"
 
 	_ "github.com/lib/pq" // import pq driver
 )
@@ -13,10 +13,10 @@ const (
 	description = "a postgres adaptor that functions as both a source and a sink"
 
 	sampleConfig = `{
-  "uri": "${POSTGRESQL_URI}"
-  // "debug": false,
-  // "tail": false,
-  // "replication_slot": "slot"
+  uri: "${POSTGRESQL_URI}"
+  // debug: false,
+  // tail: false,
+  // replication_slot: "slot"
 }`
 )
 

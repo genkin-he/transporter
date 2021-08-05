@@ -27,7 +27,7 @@ module.exports = function(msg) {
 ***NOTES***
 
 By using the elasticsearch auto-generated `_id`, it is not currently possible for transporter to
-process update/delete operations. Future work is planned in [#39](https://github.com/compose/transporter/issues/39)
+process update/delete operations. Future work is planned in [#39](https://transporter/issues/39)
 to address this problem.
 
 If no `INDEX_NAME` is provided, transporter will configure a default index named `test`.
@@ -51,7 +51,7 @@ When writing to Elasticsearch with larger documents or any complex inserts that 
 t.Config({"write_timeout":"30s"}).Source("source", source).Save("sink", sink)
 ```
 
-Addressing [#391](https://github.com/compose/transporter/issues/391)
+Addressing [#391](https://transporter/issues/391)
 
 ### Parent-Child Relationships
 

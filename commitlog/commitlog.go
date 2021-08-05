@@ -15,7 +15,7 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/compose/transporter/log"
+	"transporter/log"
 )
 
 const (

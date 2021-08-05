@@ -7,10 +7,10 @@ import (
 	"strings"
 
 	"github.com/compose/mejson"
-	"github.com/compose/transporter/client"
-	"github.com/compose/transporter/log"
-	"github.com/compose/transporter/message"
-	"github.com/compose/transporter/message/ops"
+	"transporter/client"
+	"transporter/log"
+	"transporter/message"
+	"transporter/message/ops"
 )
 
 var _ client.Writer = &Writer{}

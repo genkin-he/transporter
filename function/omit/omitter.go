@@ -1,8 +1,8 @@
 package omit
 
 import (
-	"github.com/compose/transporter/function"
-	"github.com/compose/transporter/message"
+	"transporter/function"
+	"transporter/message"
 )
 
 var (

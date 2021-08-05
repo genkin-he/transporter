@@ -8,7 +8,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/compose/transporter/client"
+	"transporter/client"
 )
 
 const rootPEM = `

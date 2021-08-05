@@ -10,12 +10,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/compose/transporter/adaptor"
-	"github.com/compose/transporter/adaptor/elasticsearch/clients"
+	"transporter/adaptor"
+	"transporter/adaptor/elasticsearch/clients"
 	// used to call init function for each client to register itself
-	_ "github.com/compose/transporter/adaptor/elasticsearch/clients/all"
-	"github.com/compose/transporter/client"
-	"github.com/compose/transporter/log"
+	_ "transporter/adaptor/elasticsearch/clients/all"
+	"transporter/client"
+	"transporter/log"
 	version "github.com/hashicorp/go-version"
 )
 
@@ -26,11 +26,11 @@ const (
 	description = "an elasticsearch sink adaptor"
 
 	sampleConfig = `{
-  "uri": "${ELASTICSEARCH_URI}"
-  // "timeout": "10s", // defaults to 30s
-  // "aws_access_key": "ABCDEF", // used for signing requests to AWS Elasticsearch service
-  // "aws_access_secret": "ABCDEF" // used for signing requests to AWS Elasticsearch service
-  // "parent_id": "elastic_parent" // defaults to "elastic_parent" parent identifier for Elasticsearch
+  uri: "${ELASTICSEARCH_URI}"
+  // timeout: "10s", // defaults to 30s
+  // aws_access_key: "ABCDEF", // used for signing requests to AWS Elasticsearch service
+  // aws_access_secret: "ABCDEF" // used for signing requests to AWS Elasticsearch service
+  // parent_id: "elastic_parent" // defaults to "elastic_parent" parent identifier for Elasticsearch
 }`
 )
 

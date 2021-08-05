@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/compose/transporter.svg?branch=master)](https://travis-ci.org/compose/transporter) [![Build Status](https://semaphoreci.com/api/v1/compose/transporter/branches/master/shields_badge.svg)](https://semaphoreci.com/compose/transporter) [![Go Report Card](https://goreportcard.com/badge/github.com/compose/transporter)](https://goreportcard.com/report/github.com/compose/transporter) [![codecov](https://codecov.io/gh/compose/transporter/branch/master/graph/badge.svg)](https://codecov.io/gh/compose/transporter) [![Docker Repository on Quay](https://quay.io/repository/compose/transporter/status "Docker Repository on Quay")](https://quay.io/repository/compose/transporter) [![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](https://gitter.im/compose-transporter/Lobby)
+[![Build Status](https://travis-ci.org/compose/transporter.svg?branch=master)](https://travis-ci.org/compose/transporter) [![Build Status](https://semaphoreci.com/api/v1/compose/transporter/branches/master/shields_badge.svg)](https://semaphoreci.com/compose/transporter) [![Go Report Card](https://goreportcard.com/badge/transporter)](https://goreportcard.com/report/transporter) [![codecov](https://codecov.io/gh/compose/transporter/branch/master/graph/badge.svg)](https://codecov.io/gh/compose/transporter) [![Docker Repository on Quay](https://quay.io/repository/compose/transporter/status "Docker Repository on Quay")](https://quay.io/repository/compose/transporter) [![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](https://gitter.im/compose-transporter/Lobby)
 
 Compose Transporter helps with database transformations from one store to another.  It can also sync from one to another or several stores.
 
@@ -46,7 +46,7 @@ Below is a list of each adaptor and its support of the feature:
 Downloading Transporter
 -----------------------
 
-The latest binary releases are available from the [Github Repository](https://github.com/compose/transporter/releases/latest)
+The latest binary releases are available from the [Github Repository](https://transporter/releases/latest)
 
 Adaptors
 --------
@@ -262,14 +262,14 @@ go build ./cmd/transporter/...
 
 ### Building guides
 
-[macOS](https://github.com/compose/transporter/blob/master/READMEMACOS.md)
-[Windows](https://github.com/compose/transporter/blob/master/READMEWINDOWS.md)
-[Vagrant](https://github.com/compose/transporter/blob/master/READMEVAGRANT.md)
+[macOS](https://transporter/blob/master/READMEMACOS.md)
+[Windows](https://transporter/blob/master/READMEWINDOWS.md)
+[Vagrant](https://transporter/blob/master/READMEVAGRANT.md)
 
 Transporter Resources
 =====================
 
-* [Transporter Wiki](https://github.com/compose/transporter/wiki)
+* [Transporter Wiki](https://transporter/wiki)
 * [Compose's articles](https://www.compose.io/articles/search/?s=transporter)
 
 Contributing to Transporter

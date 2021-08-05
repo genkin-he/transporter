@@ -5,7 +5,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/compose/transporter/log"
+	"transporter/log"
 )
 
 var (

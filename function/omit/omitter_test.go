@@ -4,10 +4,10 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/compose/transporter/function"
-	_ "github.com/compose/transporter/log"
-	"github.com/compose/transporter/message"
-	"github.com/compose/transporter/message/ops"
+	"transporter/function"
+	_ "transporter/log"
+	"transporter/message"
+	"transporter/message/ops"
 )
 
 var initTests = []struct {

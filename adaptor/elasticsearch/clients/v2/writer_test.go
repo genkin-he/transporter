@@ -8,12 +8,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/compose/transporter/adaptor"
-	"github.com/compose/transporter/adaptor/elasticsearch/clients"
-	"github.com/compose/transporter/client"
-	"github.com/compose/transporter/log"
-	"github.com/compose/transporter/message"
-	"github.com/compose/transporter/message/ops"
+	"transporter/adaptor"
+	"transporter/adaptor/elasticsearch/clients"
+	"transporter/client"
+	"transporter/log"
+	"transporter/message"
+	"transporter/message/ops"
 )
 
 const (

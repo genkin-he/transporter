@@ -1,9 +1,9 @@
 package pick
 
 import (
-	"github.com/compose/transporter/function"
-	"github.com/compose/transporter/log"
-	"github.com/compose/transporter/message"
+	"transporter/function"
+	"transporter/log"
+	"transporter/message"
 )
 
 var (

@@ -1,16 +1,14 @@
 package v1
 
 import (
-	"context"
-
 	elastic "gopkg.in/olivere/elastic.v2"
 
-	"github.com/compose/transporter/adaptor/elasticsearch/clients"
-	"github.com/compose/transporter/client"
-	"github.com/compose/transporter/log"
-	"github.com/compose/transporter/message"
-	"github.com/compose/transporter/message/ops"
 	version "github.com/hashicorp/go-version"
+	"transporter/adaptor/elasticsearch/clients"
+	"transporter/client"
+	"transporter/log"
+	"transporter/message"
+	"transporter/message/ops"
 )
 
 var (
@@ -63,11 +61,11 @@ func (w *Writer) Write(msg message.Msg) func(client.Session) (message.Msg, error
 		var err error
 		switch msg.OP() {
 		case ops.Delete:
-			_, err = w.esClient.Delete().Index(w.index).Type(indexType).Id(id).Do(context.TODO())
+			_, err = w.esClient.Delete().Index(w.index).Type(indexType).Id(id).Do()
 		case ops.Insert:
-			_, err = w.esClient.Index().Index(w.index).Type(indexType).Id(id).BodyJson(msg.Data()).Do(context.TODO())
+			_, err = w.esClient.Index().Index(w.index).Type(indexType).Id(id).BodyJson(msg.Data()).Do()
 		case ops.Update:
-			_, err = w.esClient.Index().Index(w.index).Type(indexType).BodyJson(msg.Data()).Id(id).Do(context.TODO())
+			_, err = w.esClient.Index().Index(w.index).Type(indexType).BodyJson(msg.Data()).Id(id).Do()
 		}
 		if msg.Confirms() != nil && err == nil {
 			msg.Confirms() <- struct{}{}
